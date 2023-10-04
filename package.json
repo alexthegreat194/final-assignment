@@ -1,6 +1,6 @@
 {
-  "name": "invitecodegenerater",
-  "version": "1.0.0",
+  "name": "alex-random-code-generator",
+  "version": "1.0.1",
   "description": "",
   "main": "index.js",
   "scripts": {
