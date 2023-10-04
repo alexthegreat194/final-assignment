@@ -1,0 +1,9 @@
+name: CodeGenerater Tests
+on: [push]
+jobs:
+    Run-Tests:
+        runs-on: ubuntu-latest
+        steps:
+            - run: npm i
+            - run: npm run build
+            - run: npm run test
