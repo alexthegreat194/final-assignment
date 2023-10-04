@@ -1,4 +1,4 @@
-console.log("Start...")
+// console.log("Start...")
 
 enum CodeTypes {
     Numbers,
@@ -74,9 +74,4 @@ class CodeGenerator {
     }
 }
 
-const g = new CodeGenerator(CodeTypes.NumbersAndLetters)
-for (let i = 0; i < 10; i+=1) {
-    let code = g.generate()
-    console.log(code)
-    console.log(g.validate(code))
-}
+export { CodeGenerator, CodeTypes }

@@ -1,10 +1,13 @@
-console.log("Start...");
+"use strict";
+// console.log("Start...")
+Object.defineProperty(exports, "__esModule", { value: true });
+exports.CodeTypes = exports.CodeGenerator = void 0;
 var CodeTypes;
 (function (CodeTypes) {
     CodeTypes[CodeTypes["Numbers"] = 0] = "Numbers";
     CodeTypes[CodeTypes["Letters"] = 1] = "Letters";
     CodeTypes[CodeTypes["NumbersAndLetters"] = 2] = "NumbersAndLetters";
-})(CodeTypes || (CodeTypes = {}));
+})(CodeTypes || (exports.CodeTypes = CodeTypes = {}));
 var letters = Array.from('abcdefghijklmnopqrstuvwxyz');
 var numbers = Array.from('0123456789');
 var CodeGenerator = /** @class */ (function () {
@@ -69,9 +72,4 @@ var CodeGenerator = /** @class */ (function () {
     };
     return CodeGenerator;
 }());
-var g = new CodeGenerator(CodeTypes.NumbersAndLetters);
-for (var i = 0; i < 10; i += 1) {
-    var code = g.generate();
-    console.log(code);
-    console.log(g.validate(code));
-}
+exports.CodeGenerator = CodeGenerator;
